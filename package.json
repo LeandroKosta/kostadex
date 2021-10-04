@@ -1,0 +1,27 @@
+{
+  "name": "kostadex",
+  "version": "1.0.0",
+  "description": "Criação de uma Pokedex, para cadastrar e verificar as informações dos pokemon.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandroKosta/kostadex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeandroKosta/kostadex/issues"
+  },
+  "homepage": "https://github.com/LeandroKosta/kostadex#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

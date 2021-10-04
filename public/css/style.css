@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+      0deg,
+      rgb(48, 45, 45) 0%,
+      rgb(0, 0, 0) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+nav img {
+    width: 6rem;
+    padding-left: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 68, 68);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 159, 159);
+}
+
+nav article {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav article h1 a {
+    color: rgb(255, 68, 68);
+    text-decoration: none;
+}
+
+nav article img {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+header {
+    padding-top: 3.5rem;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 0 0 1rem #00000060;
+    text-align: center;
+  }
+
+/* Config Card Home */
+  a.card {
+    width: 20rem;
+    padding: 3rem; 
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color:rgb(58, 58, 58);
+    color: #000;
+    text-decoration: none;
+    border-bottom: 10px solid #CFB53B;
+    border-top: 10px solid #CFB53B;  
+  }
+  
+  
+  a.card:hover {
+    transform: scale(1.1);
+  }
+  
+  a.card img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  a.card h2 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+  }
+
+  a.card h4 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  
+  section#pokedex {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }  
+/* Config Pag Cadastrar Pokemon */
+section#cadastrar {    
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 500px;    
+    margin: auto;
+    border-bottom: 10px solid #CFB53B;
+    border-top: 10px solid #CFB53B;   
+    }
+
+section#cadastrar h2 {
+    color: rgb(255, 68, 68);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  section#cadastrar form {
+    width: 100%;    
+    }
+
+  section#cadastrar form div input {
+    width: 100%;
+    padding: 2px;
+    font-size: 1.3rem;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 0.1rem solid #ccc;
+}
+
+section#cadastrar form div label {
+    font-size: 1.3rem;
+    color: rgb(255, 0, 0);
+}
+
+section#cadastrar form button {
+    border: 1px solid rgb(255, 68, 68);
+    background-color: #fff;
+    color: rgb(255, 68, 68);
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 60%;
+}
+
+section#cadastrar form button:hover {
+    background-color: rgb(255, 68, 68);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+/* Config Pagina Detalhes */
+header h1 {      
+  font-size: 4rem;  
+  }
+section#detalhes {
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: rgb(58, 58, 58);
+    border-bottom: 10px solid #CFB53B;
+    border-top: 10px solid #CFB53B;  
+    }
+ 
+section#detalhes div#infos p {
+    font-size: 25px;
+    padding-bottom: 1rem;
+    color: #ccc;
+    text-align: justify;
+    width: auto;
+    height: auto;    
+    }
+  
+  section#detalhes div#infos div#info-datail {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 300px;
+    height: 250px;
+    border-radius: 1rem;
+  }
+
+  .col h4 {
+    color:rgb(255, 0, 0);
+    text-decoration: underline;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  
+  section#detalhes div#infos div#info-datail h3 {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0;
+    text-align: center;   
+  }
+
+  section#detalhes div#infos #rodapedetalhes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+  
+section#detalhes div#infos #rodapedetalhes h3{ 
+  padding-top: 15px;
+  padding-left: 10px;
+} 
+
+  section#detalhes div#infos h3 {
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+  
+  section#detalhes div#infos h2 {
+    background-color: rgb(255, 47, 47);
+    padding: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    width: 50%;
+    text-align: center;
+    margin-top: 1rem;    
+  } 
+
+
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 2rem;
+  }
+  
+  span#close:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+  }
+
+  section#message {
+    padding: 1.5rem;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+
+footer {
+    background-color: rgb(255, 98, 0) 100%;
+    width: 100%;
+    height: 50px;
+    
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (max-width: 500px){
+/* Config Pag Cadastro Pokemon */
+    section#cadastrar {
+        width: 80%;    
+        margin: auto;
+        margin-bottom: 13px;        
+    }
+
+    section#cadastrar form {
+      width: 92%;
+      padding: 10px;
+    }
+
+/* Config Titulo */
+    header h1 {      
+        font-size: 3rem;
+    }
+/* Config Caixa Detalhes */
+    section#detalhes {
+        width: 65%;
+        height: 100%;     
+        margin: auto;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(58, 58, 58);
+        border-radius: 2rem;
+        padding: 4rem;
+        border-bottom: 10px solid #CFB53B;
+        border-top: 10px solid #CFB53B;
+    }
+/* Config descrição txt */
+    section#detalhes div#infos p {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        width: 400px;
+        text-align: justify;
+    }
+/* Config descrição da caixa pokemon */
+    section#detalhes div#infos div#info-datail {
+        background-color: #ccc;
+        display: flex;        
+        flex-direction: column;       
+        padding: 5px;
+        width: 389px;        
+        border-radius: 1rem;
+    }    
+
+    section#detalhes div#infos div#info-datail h3 {
+      text-align: center;       
+    }
+
+/*Config Rodapé Detalhes */ 
+    section#detalhes div#infos h2 {
+      background-color: rgb(255, 47, 47);
+      padding: 10px;
+      color: #fff;
+      border-radius: 1rem;
+      width: 50%;
+      text-align: center;
+      margin-top: 1rem;           
+    }
+    
+    section#detalhes div#infos #rodapedetalhes h3 {
+      margin-left: 40px;
+    }
+    
+    a.card {
+      width: 350px;
+      height: 370px;
+    }
+}  
