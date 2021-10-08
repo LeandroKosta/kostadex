@@ -1,4 +1,4 @@
-/* const closeMessage = document.querySelector("#close")
+const closeMessage = document.querySelector("#close")
 const message = document.querySelector("#message")
 
 closeMessage.addEventListener("click", function (){
@@ -7,4 +7,4 @@ closeMessage.addEventListener("click", function (){
 
 setTimeout(() => {
     message.style.display = "none"
-}, 5000)*/
+}, 5000)
